@@ -1,0 +1,62 @@
+ol {
+    background-color: lightyellow;
+}
+
+.impar {
+    
+    text-transform: uppercase;
+}
+
+.par {
+    color: darkgreen;
+}
+
+h1, h3 {
+    color: red;
+}
+
+.titulo {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.azul {
+    color: blue;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+#links li a[class=laranja]:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+#links li a[class=preto]:hover {
+    font-weight: bold;
+    color: black;
+}
+
+#links li a[class=verde]:hover {
+    font-weight: bold;
+    color: green
+}
+
+#links li a[class=amarelo]:hover {
+    font-weight: bold;
+    color: yellow
+}
+
+#links li a[class=outro-verde]:hover {
+    font-weight: bold;
+    color: darkgreen
+}
