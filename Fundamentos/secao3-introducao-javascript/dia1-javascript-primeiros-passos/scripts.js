@@ -30,10 +30,11 @@
 
 // let currentHour = 16;
 
-// let message = '';
-
-// if (currentHour >= 22) {
-//     message = 'Não deveríamos comer nada, é hora de dormir'
+ let message = '';
+if (typeof(message) !== 'numero') {
+    message = 'Favor digitar um status';
+} else if (currentHour >= 22) {
+  message = 'Não deveríamos comer nada, é hora de dormir'
 // } else if (currentHour >= 18 && currentHour < 22) {
 //     message = 'Rango da noite, vamos jantar :D'
 // } else if (currentHour >= 14 && currentHour < 18) {
@@ -52,7 +53,7 @@
 //     console.log('Oba, hoje é' + ' ' + weekDay + ' ' +  'mais um dia de aprendizado na Trybe >:D');
 // } else {
 //     console.log('FINALMENTE, descanso merecido! UwU!')
-// }
+}
 
 let status = 'lista';
 
@@ -69,3 +70,5 @@ switch (status) {
     default:
         console.log('Informação incorreta.')
 }
+
+
