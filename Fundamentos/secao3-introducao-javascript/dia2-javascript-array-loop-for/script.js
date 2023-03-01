@@ -1,9 +1,5 @@
 // ** Exercícios **
 
-
-// Utilizando for, crie um array que vá de 1 a 25 e imprima o resultado.
-// Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
-
 // Percorra o array imprimindo todos os valores contidos nele com a função console.log().
 // for (let index = 0; index < numbers.length; index += 1) {
 //     console.log(numbers[index]);
@@ -53,13 +49,25 @@
 //     }
 // } console.log(impar);
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Utilizando for, descubra o menor valor contido no array e imprima-o.
 
-let menor = numbers[0];
-for ( let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] < menor) {
-        menor = numbers[index];
-    }
-} console.log(menor);
+// let menor = numbers[0];
+// for ( let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] < menor) {
+//         menor = numbers[index];
+//     }
+// } console.log(menor);
+
+// Utilizando for, crie um array que vá de 1 a 25 e imprima o resultado.
+let numeros = [];
+
+for (let index = 1; index < 26; index += 1) {
+    numeros.push(index);
+} console.log(numeros);
+
+// Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+for (let index = 0; index < numeros.length; index += 1) {
+    console.log(numeros[index] / 2);
+}
