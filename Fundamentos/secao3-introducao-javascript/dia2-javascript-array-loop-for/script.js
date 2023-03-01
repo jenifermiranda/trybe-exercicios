@@ -1,11 +1,9 @@
 // ** Exercícios **
 
 
-// Utilizando for, descubra o menor valor contido no array e imprima-o.
 // Utilizando for, crie um array que vá de 1 a 25 e imprima o resultado.
 // Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // Percorra o array imprimindo todos os valores contidos nele com a função console.log().
 // for (let index = 0; index < numbers.length; index += 1) {
 //     console.log(numbers[index]);
@@ -48,9 +46,20 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // } console.log(maior);
 
 // Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
-let impar = []
-for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        impar.push(numbers[index]);
+// let impar = []
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] % 2 !== 0) {
+//         impar.push(numbers[index]);
+//     }
+// } console.log(impar);
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// Utilizando for, descubra o menor valor contido no array e imprima-o.
+
+let menor = numbers[0];
+for ( let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] < menor) {
+        menor = numbers[index];
     }
-} console.log(impar);
+} console.log(menor);
