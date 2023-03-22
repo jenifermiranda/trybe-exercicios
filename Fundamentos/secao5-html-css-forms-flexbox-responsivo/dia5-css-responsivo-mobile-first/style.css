@@ -67,7 +67,25 @@ body {
   }
 
   @media (min-width: 500px) {
-    card:nth-of-type(1) {
+    .card:nth-of-type(1) {
+        display: inline-block;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 1000px) {
+    .card:nth-child(2) {
         display: block;
+    }
+  }
+
+  @media (max-width: 649px), (min-width: 951px) {
+    .card:nth-child(3) {
+        display: block;
+    }
+  }
+
+  @media (max-width: 500px) {
+    p.trick {
+        color: purple;
     }
   }
