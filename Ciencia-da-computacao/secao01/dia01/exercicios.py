@@ -68,3 +68,44 @@ def qual_triangulo(a, b, c):
 
 
 # print(qual_triangulo(2, 1, 3))
+
+nums = [1, 2, 3, 4]
+
+
+def containsDuplicate(nums):
+    first_number = nums[0]
+    is_true = 0
+    for num in nums:
+        if num == first_number:
+            is_true = is_true + 1
+    if is_true > 1:
+        return True
+    else:
+        return False
+
+
+# print(nums[0])
+# print(containsDuplicate(nums))
+
+# Input: nums = [1,2,3,1]
+# Output: true
+
+# Input: nums = [1,2,3,4]
+# Output: false
+
+# Input: nums = [1,1,1,3,3,4,3,2,4,2]
+# Output: true
+
+s = ["a", "a", "b", "b", "a"]
+
+
+def alternatingCharacters(s):
+    counter = 0
+
+    for index in range(1, len(s)):
+        if s[index] != s[index - 1]:
+            counter += 1
+    return counter
+
+
+print(alternatingCharacters(s))
