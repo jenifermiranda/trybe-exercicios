@@ -1,4 +1,4 @@
-from array_example import ListaArray
+from secao03.dia01.array_example import ListaArray
 
 
 class Matrix(ListaArray):
